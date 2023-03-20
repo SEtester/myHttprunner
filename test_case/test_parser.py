@@ -62,7 +62,7 @@ def test_parse_form_to_dict_success(input_str, expected_output):
 # Failure test cases
 @pytest.mark.parametrize("input_str", failure_test_data)
 def test_parse_form_to_dict_failure(input_str):
-    assert parse_form_to_dict(input_str) != {}
+    assert parse_form_to_dict(input_str) is False
 
 
 if __name__ == '__main__':
